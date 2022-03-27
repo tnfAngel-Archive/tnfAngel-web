@@ -1,0 +1,139 @@
+body {
+  color: #fff;
+  background-color: #3900b8;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #121212;
+}
+
+::-moz-selection {
+  color: #3900b8;
+  background: #282a2e;
+}
+
+::selection {
+  color: #3900b8;
+  background: #282a2e;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: #3900b8;
+  background-image: url(https://cdn.tnfangel.ml/assets/background.png);
+}
+
+.mask {
+  height: 100vh;
+  background-color: #00000099;
+  transition: background-color 1s linear;
+}
+
+#main {
+  padding: 5em 0 4.75em 0;
+  text-align: center;
+}
+
+#main .inner {
+  margin: 0 auto;
+  width: 55em;
+}
+
+.main-logo-container {
+  transition: opacity 2s ease, transform 1s ease;
+  transform: translateY(0);
+  opacity: 1;
+  margin: 0 0 1.3em 0;
+}
+
+.main-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.main-title {
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+  transform: translateX(0);
+  transition-delay: 0.65s;
+  filter: blur(0);
+  opacity: 1;
+  font-family: Raleway, Helvetica, sans-serif;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+  font-size: 2.25em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+}
+
+.main-text {
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+  transform: translateX(0);
+  transition-delay: 0.8s;
+  filter: blur(0);
+  opacity: 1;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+
+@media screen and (max-width: 980px) {
+  #main .inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #main {
+    padding: 5em 2em 4.25em 2em;
+    margin-bottom: -2.5em;
+  }
+
+  .main-logo-container {
+    margin: 0 0 1em 0;
+  }
+
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .main-text {
+    font-size: 0.8em;
+  }
+}
+
+body.is-preload .main-logo-container {
+  transform: translateY(0.5em);
+  opacity: 0;
+}
+
+body.is-preload .main-title {
+  opacity: 0;
+  transform: translateX(0.25em);
+  filter: blur(2px);
+}
+
+body.is-preload .main-text {
+  opacity: 0;
+  transform: translateX(0.5em);
+  filter: blur(2px);
+}
