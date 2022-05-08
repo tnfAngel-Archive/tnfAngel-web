@@ -1,0 +1,79 @@
+/* Root */
+:root {
+    --main__bg-color-secondary: #222222;
+    --main__bg-color: #252525;
+    --main__color: #651dff;
+    --main__font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif; ;
+    --main__text-muted: #9b9b9b;
+    --main__text-muted-2: #bbbbbb;
+    --main__text: #f5f5f5;
+}
+
+/* Webkit */
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main__bg-color-secondary)
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main__bg-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main__color)
+}
+
+::-webkit-selection {
+    background: var(--main__bg-color-secondary);
+    color: var(--main__color);
+}
+
+/* Gecko */
+::-moz-scrollbar {
+    width: 10px
+}
+
+::-moz-scrollbar-track {
+    background: var(--main__bg-color-secondary)
+}
+
+::-moz-scrollbar-thumb {
+    background: var(--main__bg-color);
+    border-radius: 5px;
+}
+
+::-moz-scrollbar-thumb:hover {
+    background: var(--main__color)
+}
+
+::-moz-selection {
+    background: var(--main__bg-color-secondary);
+    color: var(--main__color);
+}
+
+/* General */
+::scrollbar {
+    width: 10px
+}
+
+::scrollbar-track {
+    background: var(--main__bg-color-secondary)
+}
+
+::scrollbar-thumb {
+    background: var(--main__bg-color);
+    border-radius: 5px;
+}
+
+::scrollbar-thumb:hover {
+    background: var(--main__color)
+}
+
+::selection {
+    color: var(--main__color);
+    background: var(--main__bg-color-secondary);
+}

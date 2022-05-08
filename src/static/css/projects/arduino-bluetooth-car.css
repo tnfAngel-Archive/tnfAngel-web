@@ -1,0 +1,226 @@
+body {
+    background-color: var(--main__bg-color);
+    color: #fff;
+    font-family: var(--main__font-family);
+    margin: 0;
+}
+
+body .gist .gist-file {
+    border-color: #555 #555 #444
+}
+
+body .gist .gist-data {
+    border-color: #555
+}
+
+body .gist .gist-meta {
+    color: #ffffff;
+    background-color: #373737;
+}
+
+body .gist .file {
+    background-color: #373737;
+}
+
+body .gist .gist-meta a {
+    color: #ffffff
+}
+
+/* Gist Embed - Dark Theme Styling - Thanks to MattD */
+
+/* Body */
+.gist-data tbody {
+    background-color: #292929;
+}
+
+/* Line Numbers */
+.gist-data tbody td:nth-of-type(1) {
+    color: #2B91AF !important;
+}
+
+/* Code */
+.gist-data tbody td:nth-of-type(2) {
+    color: #FFFFFF !important;
+}
+
+/* Comments */
+.pl-c {
+    color: #57A64A !important;
+}
+
+/* Function */
+.pl-k,
+tbody tr:first-child .blob-code,
+tbody tr:last-child .blob-code {
+    color: #569CD6 !important;
+}
+
+/* Function Name */
+.pl-en {
+    color: #FFFFFF !important;
+}
+
+/* Function Method */
+.pl-c1 {
+    color: #FFFFFF !important;
+}
+
+/* "'s around Strings */
+.pl-pds {
+    color: #D69D85 !important;
+}
+
+/* Strings */
+.pl-s {
+    color: #D69D85 !important;
+}
+
+* {
+    opacity: 1;
+    transition: opacity 0.5s ease
+}
+
+/* Section */
+section {
+    margin: 0 auto;
+    text-align: center;
+    width: 55em;
+}
+
+/* Main */
+.main {
+    padding-top: 7rem
+}
+
+.main__title {
+    border-bottom: solid 2px #ffffff20;
+    filter: blur(0);
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    opacity: 1;
+    padding-bottom: 0.4em;
+    transform: translateX(0);
+    transition-delay: 0.65s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.main__subtitle {
+    border-bottom: solid 2px #ffffff20;
+    filter: blur(0);
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    opacity: 1;
+    padding-bottom: 0.4em;
+    transform: translateX(0);
+    transition-delay: 2s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.main__image {
+    filter: blur(0);
+    opacity: 1;
+    max-width: 55em;
+    padding-bottom: 0.4em;
+    transform: translateX(0);
+    transition-delay: 0.65s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+    border-radius: 2px;
+}
+
+.main__text {
+    filter: blur(0);
+    font-size: 0.9em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.main__color {
+    color: var(--main__color);
+}
+
+.list {
+    list-style-type: circle;
+    color: var(--main__text-muted-2)
+}
+
+/* Button */
+.button {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.button a {
+    background: var(--main__color);
+    border: 2px #ffffff20 solid;
+    padding: 7.5px 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+
+    section {
+        margin: 0;
+        width: 100%;
+    }
+
+    .page-wrapper {
+        padding: 2rem
+    }
+
+    .main__title {
+        font-size: 1.5em
+    }
+
+    .main__image {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .main__text {
+        font-size: 0.8em
+    }
+}
+
+/* Animations */
+body.is-preload * {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateY(0.5em);
+}
+
+body.is-preload .button {
+    opacity: 0;
+    transform: translateY(0.5em);
+}
+
+body.is-preload .main__title {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(0.25em);
+}
+
+body.is-preload .main__subtitle {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(-0.25em);
+}
+
+body.is-preload .main__text {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(0.5em);
+}
+
+body.is-preload .main__image {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateY(0.5em);
+}

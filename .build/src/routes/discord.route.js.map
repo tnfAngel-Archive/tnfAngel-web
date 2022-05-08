@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/routes/discord.route.ts"],
+  "sourcesContent": ["// External Imports\nimport { Router } from 'express';\n\n// External Typings Imports\nimport type { Request, Response } from 'express';\n\nconst router = Router();\n\nrouter.get('/', (req: Request, res: Response) => {\n\tres.send('200 OK');\n});\n\nmodule.exports = router;\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AACA,qBAAuB;AAKvB,MAAM,SAAS;AAEf,OAAO,IAAI,KAAK,CAAC,KAAc,QAAkB;AAChD,MAAI,KAAK;AAAA;AAGV,OAAO,UAAU;",
+  "names": []
+}

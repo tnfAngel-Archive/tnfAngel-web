@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/static/js/main.js"],
+  "sourcesContent": ["// Play initial animations on page load.\n$(window).on('load', () => {\n\twindow.setTimeout(() => {\n\t\t$('body').removeClass('is-preload');\n\t}, 100);\n});\n\n// NavBar\n$(() => {\n\t$('.toggle').on('click', function () {\n\t\tif ($('.item').hasClass('active')) {\n\t\t\t$('.item').removeClass('active');\n\t\t\t$(this).find('a').html(\"<i class='fas fa-bars'></i>\");\n\t\t} else {\n\t\t\t$('.item').addClass('active');\n\t\t\t$(this).find('a').html(\"<i class='fas fa-times'></i>\");\n\t\t}\n\t});\n});\n"],
+  "mappings": "AACA,EAAE,QAAQ,GAAG,QAAQ,MAAM;AAC1B,SAAO,WAAW,MAAM;AACvB,MAAE,QAAQ,YAAY;AAAA,KACpB;AAAA;AAIJ,EAAE,MAAM;AACP,IAAE,WAAW,GAAG,SAAS,WAAY;AACpC,QAAI,EAAE,SAAS,SAAS,WAAW;AAClC,QAAE,SAAS,YAAY;AACvB,QAAE,MAAM,KAAK,KAAK,KAAK;AAAA,WACjB;AACN,QAAE,SAAS,SAAS;AACpB,QAAE,MAAM,KAAK,KAAK,KAAK;AAAA;AAAA;AAAA;",
+  "names": []
+}

@@ -1,0 +1,180 @@
+body {
+    background-color: var(--main__bg-color);
+    color: var(--main__text);
+    font-family: var(--main__font-family);
+    margin: 0;
+}
+
+/* Section */
+section {
+    margin: 0 auto;
+    text-align: center;
+    width: 56em;
+}
+
+/* Main */
+.main {
+    padding: 5rem 0rem 3rem 0rem;
+}
+
+.main__logo-container {
+    margin: 0 0 1.3em;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 2s ease, transform 1s ease;
+}
+
+.main__logo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.main__title {
+    border-bottom: solid 2px #ffffff20;
+    filter: blur(0);
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    opacity: 1;
+    padding-bottom: 0.4em;
+    transform: translateX(0);
+    transition-delay: 0.65s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+
+.main__text {
+    filter: blur(0);
+    font-size: 1.05em;
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+/* Cards */
+.cards {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: var(--main__bg-color-secondary);
+    border-radius: 2px;
+    cursor: pointer;
+    filter: blur(0);
+    margin-bottom: 2rem;
+    opacity: 1;
+    overflow: hidden;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(80%);
+    float: left;
+    height: 200px;
+    overflow: hidden;
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    width: 40%;
+}
+
+.card__content {
+    float: left;
+    height: 200px;
+    padding: 1rem;
+    width: 60%;
+}
+
+.card:hover .card__image {
+    filter: contrast(100%);
+}
+
+.card__image-projects {
+    background-image: url('/assets/projects.png');
+}
+
+.card__image-github {
+    background-image: url('/assets/github.png');
+}
+
+.card__image-discord {
+    background-image: url('/assets/discord.png');
+}
+
+
+.card__title {
+    color: var(--main__text);
+    font-size: 1.25rem;
+}
+
+.card__text {
+    color: var(--main__text-muted);
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+    section {
+        margin: 0;
+        width: 100%;
+    }
+
+    .page-wrapper {
+        padding: 1rem;
+    }
+
+    .main__title {
+        font-size: 1.7em
+    }
+
+    .main__text {
+        font-size: 0.9em
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .card__image {
+        float: none;
+        position: relative;
+        width: auto;
+    }
+
+    .card__content {
+        float: none;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Animations */
+body.is-preload .main__logo-container {
+    opacity: 0;
+    transform: translateY(0.5em);
+}
+
+body.is-preload .main__title {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(0.25em);
+}
+
+body.is-preload .main__text {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(0.5em);
+}
+
+body.is-preload .card {
+    opacity: 0;
+    transform: translateY(0.5em);
+}

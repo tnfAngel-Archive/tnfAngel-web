@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/handlers/errorHandler.handler.ts"],
+  "sourcesContent": ["// External Imports\nimport { join as joinPath } from 'path';\n\n// External Typings Imports\nimport type { Request, Response, NextFunction } from 'express';\n\nexport const errorHandler = (\n\terror: any,\n\t_req: Request,\n\tres: Response,\n\t_next: NextFunction\n) => {\n\tif (!error.statusCode) error.statusCode = 500;\n\n\tif (error.statusCode === 404) {\n\t\treturn res\n\t\t\t.status(error.statusCode)\n\t\t\t.sendFile(joinPath(__dirname, '../static/html/404.html'));\n\t}\n\n\treturn res\n\t\t.status(error.statusCode)\n\t\t.json({ statusCode: error.statusCode, message: error.message });\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AACA,kBAAiC;AAK1B,MAAM,eAAe,CAC3B,OACA,MACA,KACA,UACI;AACJ,MAAI,CAAC,MAAM;AAAY,UAAM,aAAa;AAE1C,MAAI,MAAM,eAAe,KAAK;AAC7B,WAAO,IACL,OAAO,MAAM,YACb,SAAS,sBAAS,WAAW;AAAA;AAGhC,SAAO,IACL,OAAO,MAAM,YACb,KAAK,EAAE,YAAY,MAAM,YAAY,SAAS,MAAM;AAAA;",
+  "names": []
+}

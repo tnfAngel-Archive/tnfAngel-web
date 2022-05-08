@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Title -->
+    <title>Coche RC Arduino Bluetooth</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/assets/manifest.json">
+
+    <!-- Meta Color -->
+    <meta name="msapplication-TileColor" content="#3900b8">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#3900b8">
+
+    <!-- General Meta -->
+    <meta name="title" content="tnfAngel Web">
+    <meta name="description" content="¡La web oficial de tnfAngel!">
+    <meta name="keywords" content="tnfAngel,tnfAngel Web,development" />
+    <meta name="theme-color" content="#3900b8">
+    <meta name="author" content="tnfAngel">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tnfAngel.ml/">
+    <meta property="og:site_name" content="tnfAngel">
+    <meta property="og:title" content="tnfAngel Web">
+    <meta property="og:description" content="¡La web oficial de tnfAngel!">
+    <meta property="og:image" content="https://cdn.tnfAngel.ml/assets/background.png">
+    <meta property="og:keywords" content="tnfAngel,tnfAngel Bots,bots,development" />
+
+    <!-- Twitter Meta -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.tnfAngel.ml/">
+    <meta property="twitter:title" content="tnfAngel Web">
+    <meta property="twitter:description" content="¡La web oficial de tnfAngel!">
+    <meta property="twitter:image" content="https://cdn.tnfangel.ml/assets/background.png">
+    <meta property="twitter:site" content="@tnfAngel">
+    <meta property="twitter:site:id" content="@tnfAngel">
+    <meta property="twitter:creator" content="@tnfAngel">
+    <meta property="twitter:creator:id" content="@tnfAngel">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/projects/arduino-bluetooth-car.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body class="is-preload">
+    <!-- NavBar -->
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="logo">
+                <a href="/">tnfAngel</a>
+            </li>
+            <li class="item">
+                <a href="/#">Inicio</a>
+            </li>
+            <li class="item">
+                <a href="/projects/#">Proyectos</a>
+            </li>
+            <li class="item">
+                <a href="https://github.com/tnfAngel">Github</a>
+            </li>
+            <li class="item">
+                <a href="/contact/#">Contacto</a>
+            </li>
+            <li class="toggle">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper" class="page-wrapper">
+
+        <!--  Main Section -->
+        <section id="main" class="main">
+            <h1 class="main__title">Coche RC Arduino Bluetooth</h1>
+            <img src="/assets/projects/arduino-bluetooth-car/frontal.png" alt="Coche RC Arduino" class="main__image" />
+            <p class="main__text">Coche robot con Arduino como cerebro controlado por Bluetooth.</p>
+            <br>
+            <h3 class="main__subtitle">Material necesario</h3>
+            <br>
+            <h4 class="main__subtitle-2">Componentes Electrónicos:</h4>
+            <br>
+            <ul class="list">
+                <li>Arduino UNO</li>
+                <li>(x<span class="main__color">2</span>) Motor TT 130</li>
+                <li>Sensor ultrasónico HC-SR04</li>
+                <li>Puente en H L298N</li>
+                <li>Servomotor SG90</li>
+                <li>Módulo de bluetooth XM-15B SPP</li>
+                <li>Cables o Jumpers</li>
+                <li>(x<span class="main__color">3</span>) Portapilas x4 AAA</li>
+                <li>(x<span class="main__color">12</span>) Pilas AAA pequeñas</li>
+                <li>Interruptor basculante 2 pines</li>
+                <li>Clema</li>
+            </ul>
+            <br>
+            <h4 class="main__subtitle-2">Elementos comprados:</h4>
+            <br>
+            <ul class="list">
+                <li>(x<span class="main__color">4</span>) Ruedas de coche para Motor TT 130</li>
+                <li>(x<span class="main__color">6</span>) Tornillos 40mm x 4mm</li>
+                <li>(x<span class="main__color">6</span>) Arandelas 4mm</li>
+                <li>(x<span class="main__color">6</span>) Tuercas 4mm</li>
+                <li>(x<span class="main__color">11</span>) Tornillos 40mm x 3mm </li>
+                <li>(x<span class="main__color">11</span>) Arandelas x 3mm </li>
+                <li>(x<span class="main__color">11</span>) Tuercas x 3mm</li>
+                <li>Brazo doble de servomotor</li>
+            </ul>
+            <br>
+            <h4 class="main__subtitle-2">Piezas impresas en 3D:</h4>
+            <br>
+            <ul class="list">
+                <li>Chasis parte de abajo (Chassis_DOWN)</li>
+                <li>Chasis parte de arriba (Chassis_UP)</li>
+                <li>(x<span class="main__color">2</span>) Ejes de transmisión (Driveshaft_front)</li>
+                <li>Parachoques frontal (Frontal)</li>
+                <li>(x<span class="main__color">2</span>) Buje delantero (Hub_front)</li>
+                <li>(x<span class="main__color">2</span>) Pin de pivote (Pivot_hub)</li>
+                <li>(x<span class="main__color">4</span>) Anillo Seeger (Seeger)</li>
+                <li>(x<span class="main__color">2</span>) Espaciador (Spacer)</li>
+                <li>(x<span class="main__color">2</span>) Barra de dirección (Steering Bar)</li>
+                <li>(x<span class="main__color">2</span>) Arandelas (Washer)</li>
+            </ul>
+            <br>
+            <h4 class="main__subtitle-2">Herramientas:</h4>
+            <br>
+            <ul class="list">
+                <li>Impresora 3D</li>
+                <li>Destornillador</li>
+            </ul>
+            <br>
+            <h4 class="main__subtitle-2">Software:</h4>
+            <br>
+            <ul class="list">
+                <li>Arduino IDE</li>
+                <li>Mozilla Firefox</li>
+                <li>Ultimaker Cura</li>
+                <li>Bluetooth Electronics</li>
+            </ul>
+            <br>
+            <br>
+            <h3 class="main__subtitle">Impresión 3D</h3>
+            <br>
+            <p>Primero debemos descargar los modelos 3D desde <a href="https://grabcad.com/library/3d-printed-rc-car-1"
+                    class="main__color" target="_blank">aquí.</a></p>
+            <br>
+            <p>Después de descargar los modelos STL, debemos imprimirlos en 3D usando Ultimaker Cura.</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/cura.png" alt="Elementos a imprimir" class="main__image" />
+            <br>
+            <p>Y comienzas a imprimir todos los modelos.</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/print.png" alt="Impresión" class="main__image" />
+            <br>
+            <br>
+            <h3 class="main__subtitle">Montaje</h3>
+            <br>
+            <p>Después de limar bien todos los modelos, comienza el montaje de estos ayudándote de las siguientes
+                imágenes:</p>
+            <br>
+            <p>Parte de abajo:</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/bottom.png" alt="Parte de abajo" class="main__image" />
+            <br>
+            <p>Ruedas delanteras:</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/wheel.png" alt="Ruedas" class="main__image" />
+            <br>
+            <p>Dirección:</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/direction.png" alt="Parte de arriba" class="main__image" />
+            <br>
+            <p>Parte de arriba:</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/top.png" alt="Parte de arriba" class="main__image" />
+            <br>
+            <p>Una vez ensamblado debería quedar algo así:</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/diagonal.png" alt="Diagonal" class="main__image" />
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/print-ensambled.png" alt="Coche ensamblado"
+                class="main__image" />
+            <br>
+            <h3 class="main__subtitle">Circuitería</h3>
+            <br>
+            <p>Ahora debemos montar toda la electrónica. Estos son los circuitos guía que he usado.</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/circuit.png" alt="Cicuíto 1" class="main__image" />
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/circuit2.png" alt="Cicuíto 2" class="main__image" />
+            <br>
+            <p>Luego de montarlo todo, asi ha quedado el coche.</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/back.png" alt="Coche RC Arduino" class="main__image" />
+            <br>
+            <h3 class="main__subtitle">Programación del Arduino</h3>
+            <br>
+            <h4 class="main__subtitle-2">Librerías Utilizadas:</h4>
+            <br>
+            <h5 class="main__subtitle-2">SoftwareSerial:</h5>
+            <br>
+            <p>Librería utilizada para la comunicación entre el modulo de bluetooth XM-15B SPP y Arduino.</p>
+            <br>
+            <h5 class="main__subtitle-2">L298NX2:</h5>
+            <br>
+            <p>Librería para usar el puente en H L298N en los dos motores fácilmente.</p>
+            <br>
+            <h5 class="main__subtitle-2">Servo:</h5>
+            <br>
+            <p>Librería utilizada para el control del servomotor que usa la dirección.</p>
+            <br>
+            <h5 class="main__subtitle-2">EzBuzzer:</h5>
+            <br>
+            <p>Librería para emitir sonidos con el buzzer pasivo sin bloquear los núcleos del Arduino y que se pueda
+                ejecutar otras lineas de código en paralelo.</p>
+            <br>
+            <h5 class="main__subtitle-2">Pitches:</h5>
+            <br>
+            <p>Librería con todos los tonos para poder reproducir sonidos con notas.</p>
+            <br>
+            <br>
+            <p>Código fuente programado del coche y librería pitches.</p>
+            <br>
+            <script src="https://gist.github.com/tnfAngel/72a454e52543b457debc130561dde7b6.js"></script>
+            <br>
+            <h3 class="main__subtitle">Control remoto por bluetooth</h3>
+            <br>
+            <p>Una vez ensamblado y programado el coche, solo queda probarlo, para eso necesitamos una la aplicación
+                <span class="main__color">Bluetooth Electronics</span>
+            </p>
+            <br>
+            <p>Conectamos el teléfono con el módulo de bluetooth XM-15 y abrimos la aplicación y le damos a connect</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/bte-1.png" alt="Abrimos aplicación" class="main__image" />
+            <br>
+            <p>Buscamos y conectamos el XM-15</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/bte-2.png" alt="Conectamos XM-15" class="main__image" />
+            <br>
+            <p>Creamos el siguiente mando o parecido</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/bte-3.png" alt="Creamos el mando" class="main__image" />
+            <br>
+            <p>Ponemos estos ajustes al slider de acelerar</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/bte-4.png" alt="Ajustamos el slider X"
+                class="main__image" />
+            <br>
+            <p>Ponemos también estos ajustes al slider de girar</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/bte-5.png" alt="Ajustamos el slider Y"
+                class="main__image" />
+            <br>
+            <p>Salimos del modo editar, le damos a run y ¡Ya puedes controlar tu coche!</p>
+            <br>
+            <img src="/assets/projects/arduino-bluetooth-car/car-top.png" alt="Coche con mando" class="main__image" />
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+    background-color: var(--main__bg-color);
+    color: #fff;
+    font-family: var(--main__font-family);
+    margin: 0;
+}
+
+/* Section */
+section {
+    margin: 0 auto;
+    text-align: center;
+    width: 55em;
+}
+
+/* Main */
+.main {
+    padding-top: 5rem
+}
+
+.main__logo-container {
+    margin: 0 0 1.3em;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 2s ease, transform 1s ease;
+}
+
+.main__logo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.main__title {
+    border-bottom: solid 2px #ffffff20;
+    filter: blur(0);
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    opacity: 1;
+    padding-bottom: 0.4em;
+    transform: translateX(0);
+    transition-delay: 0.65s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.main__text {
+    filter: blur(0);
+    font-size: 0.9em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+/* Button */
+.button {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+}
+
+.button a {
+    background: var(--main__color);
+    border: 2px #ffffff20 solid;
+    padding: 7.5px 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+
+    section {
+        margin: 0;
+        width: 100%;
+    }
+
+    .page-wrapper {
+        padding: 2rem
+    }
+
+    .main__title {
+        font-size: 1.5em
+    }
+
+    .main__text {
+        font-size: 0.8em
+    }
+}
+
+/* Animations */
+body.is-preload .button {
+    opacity: 0;
+    transform: translateY(0.5em);
+}
+
+body.is-preload .main__logo-container {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateY(0.5em);
+}
+
+body.is-preload .main__title {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(0.25em);
+}
+
+body.is-preload .main__text {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateX(0.5em);
+}

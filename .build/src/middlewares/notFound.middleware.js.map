@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/middlewares/notFound.middleware.ts"],
+  "sourcesContent": ["// External Typings imports\nimport type { Request, Response, NextFunction } from 'express';\n\nexport const notFoundMW = (\n\t_req: Request,\n\t_res: Response,\n\tnext: NextFunction\n) => {\n\tconst error = new Error('Not Found') as any;\n\terror.statusCode = 404;\n\n\tnext(error);\n};\n"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAGO,MAAM,aAAa,CACzB,MACA,MACA,SACI;AACJ,QAAM,QAAQ,IAAI,MAAM;AACxB,QAAM,aAAa;AAEnB,OAAK;AAAA;",
+  "names": []
+}
