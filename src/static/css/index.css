@@ -21,7 +21,7 @@ section {
     margin: 0 0 1.3em;
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 2s ease, transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .main__logo {
@@ -95,15 +95,15 @@ section {
 }
 
 .card__image-projects {
-    background-image: url('/assets/projects.png');
+    background-image: url('/assets/projects.webp');
 }
 
 .card__image-github {
-    background-image: url('/assets/github.png');
+    background-image: url('/assets/github.webp');
 }
 
 .card__image-discord {
-    background-image: url('/assets/discord.png');
+    background-image: url('/assets/discord.webp');
 }
 
 
