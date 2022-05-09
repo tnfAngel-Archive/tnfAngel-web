@@ -2,3 +2,7 @@ node_modules/*
 .upm/*
 .env
 .yarn/*
+node_modules/*
+.build/*
+.config/*
+.cache/*
