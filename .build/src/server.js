@@ -51,12 +51,7 @@ app.get("/github", (_req, res) => {
 app.get("/discord", (_req, res) => {
   res.redirect("https://discord.gg/8RNAdpK");
 });
-app.get("/robots.txt", (_req, res) => {
-  res.sendFile("static/assets/robots.txt", { root: __dirname });
-});
-app.get("/sitemap.xml", (_req, res) => {
-  res.sendFile("static/assets/sitemap.xml", { root: __dirname });
-});
+app.use("/", (0, import_express.static)((0, import_path.join)(__dirname, "./static/assets/root")));
 app.get("*", import_notFound.notFoundMW);
 app.use(import_errorHandler.errorHandler);
 server.listen(app.get("port"), () => {

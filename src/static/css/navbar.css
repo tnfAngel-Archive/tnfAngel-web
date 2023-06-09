@@ -81,6 +81,7 @@ a:hover {
     .toggle {
         flex: 1;
         text-align: right;
+        cursor: pointer;
     }
 
     .item.button {

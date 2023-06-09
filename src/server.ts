@@ -65,15 +65,8 @@ app.get('/discord', (_req: Request, res: Response): void => {
 	res.redirect('https://discord.gg/8RNAdpK');
 });
 
-// Robots
-app.get('/robots.txt', (_req: Request, res: Response): void => {
-	res.sendFile('static/assets/robots.txt', { root: __dirname });
-});
-
-// Sitemap
-app.get('/sitemap.xml', (_req: Request, res: Response): void => {
-	res.sendFile('static/assets/sitemap.xml', { root: __dirname });
-});
+// Root
+app.use('/', expressStatic(joinPath(__dirname, './static/assets/root')));
 
 app.get('*', notFoundMW);
 

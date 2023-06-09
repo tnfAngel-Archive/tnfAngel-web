@@ -1,9 +1,9 @@
 /* Root */
 :root {
     --main__bg-color-secondary: #222222;
-    --main__bg-color: #252525;
-    --main__color: #651dff;
-    --main__font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif; ;
+    --main__bg-color: #272727;
+    --main__color: #ff0067;
+    --main__font-family: -apple-system, BlinkMacSystemFont, Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     --main__text-muted: #9b9b9b;
     --main__text-muted-2: #bbbbbb;
     --main__text: #f5f5f5;
